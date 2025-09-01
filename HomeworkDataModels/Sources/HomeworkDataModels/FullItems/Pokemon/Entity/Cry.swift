@@ -16,9 +16,3 @@ public class Cry {
         self.latest = latest
     }
 }
-
-extension Cry {
-    func toDTO() -> CryDTO {
-        return CryDTO(latest: latest)
-    }
-}

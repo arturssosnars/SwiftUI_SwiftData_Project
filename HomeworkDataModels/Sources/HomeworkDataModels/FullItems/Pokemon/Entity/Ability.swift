@@ -23,19 +23,7 @@ public class Ability {
     }
 }
 
-extension Ability {
-    func toDTO() -> AbilityDTO {
-        return AbilityDTO(ability: ability.toDTO(),
-                          isHidden: isHidden,
-                          slot: slot)
-    }
-}
-
 extension Array where Element == Ability {
-    func toDTO() -> [AbilityDTO] {
-        return self.map { $0.toDTO() }
-    }
-    
     public func toList() -> [String] {
         var list: [String] = []
         for ability in self {

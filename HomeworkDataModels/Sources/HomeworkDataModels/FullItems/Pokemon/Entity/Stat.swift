@@ -23,19 +23,7 @@ public class Stat {
     }
 }
 
-extension Stat {
-    func toDTO() -> StatDTO {
-        return StatDTO(baseStat: baseStat,
-                       effort: effort,
-                       stat: stat.toDTO())
-    }
-}
-
 extension Array where Element == Stat {
-    func toDTO() -> [StatDTO] {
-        return self.map { $0.toDTO() }
-    }
-    
     public func toList() -> [String: Int] {
         var stats: [String: Int] = [:]
         self.forEach { stats[$0.stat.name] = $0.baseStat }

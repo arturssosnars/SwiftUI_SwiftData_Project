@@ -65,23 +65,3 @@ public class Pokemon {
                                      frontShinyFemale: frontShinyFemale)
     }
 }
-
-extension Pokemon {
-    public func toDTO() -> PokemonDTO {
-        return PokemonDTO(
-            id: id,
-            name: name,
-            stats: stats.toDTO(),
-            isDefault: isDefault,
-            locationAreaEncounters: locationAreaEncounters,
-            abilities: abilities.toDTO(),
-            baseExperience: baseExperience,
-            cries: cries.toDTO(),
-            forms: forms.toDTO(),
-            height: height,
-            weight: weight,
-            heldItems: heldItems.toDTO(),
-            moves: moves.toDTO(),
-            sprites: sprites.toDTO())
-    }
-}

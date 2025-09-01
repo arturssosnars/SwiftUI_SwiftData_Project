@@ -39,18 +39,6 @@ public class Sprites {
     }
 }
 
-extension Sprites {
-    func toDTO() -> SpritesDTO {
-        SpritesDTO(
-            frontDefault: frontDefault,
-            frontDefaultFemale: frontDefaultFemale,
-            frontShiny: frontShiny,
-            frontShinyFemale: frontShinyFemale,
-            images: images?.toDTO()
-        )
-    }
-}
-
 @Model
 public class SpriteImages {
     @Attribute(.externalStorage) public var frontDefault: Data?
@@ -66,14 +54,5 @@ public class SpriteImages {
         self.frontDefaultFemale = frontDefaultFemale
         self.frontShiny = frontShiny
         self.frontShinyFemale = frontShinyFemale
-    }
-    
-    func toDTO() -> SpriteImagesDTO {
-        SpriteImagesDTO(
-            frontDefault: frontDefault,
-            frontDefaultFemale: frontDefaultFemale,
-            frontShiny: frontShiny,
-            frontShinyFemale: frontShinyFemale
-        )
     }
 }

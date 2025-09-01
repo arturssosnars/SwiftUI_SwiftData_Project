@@ -17,17 +17,7 @@ public class Move {
     }
 }
 
-extension Move {
-    func toDTO() -> MoveDTO {
-        return MoveDTO(move: move.toDTO())
-    }
-}
-
 extension Array where Element == Move {
-    func toDTO() -> [MoveDTO] {
-        return self.map { $0.toDTO() }
-    }
-    
     public func toList() -> [String] {
         return self.map { $0.move.name.capitalized }
     }

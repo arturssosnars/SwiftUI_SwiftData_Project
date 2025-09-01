@@ -3,38 +3,4 @@
    uuid = "EADB7D74-086B-44F9-8A8A-9647786882A1"
    type = "0"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "46E8DC51-8727-4F2F-AF63-8FCB3BAC1380"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HomeworkDataModels/Sources/HomeworkDataModels/FullItems/Pokemon/Entity/Pokemon.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "init(id:name:stats:isDefault:locationAreaEncounters:abilities:baseExperience:cries:forms:height:weight:heldItems:moves:sprites:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "01AE918F-3350-4AD3-B5AD-72521A7FF883"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HomeworkDataModels/Sources/HomeworkDataModels/FullItems/Pokemon/Entity/Pokemon.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "toDTO()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

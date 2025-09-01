@@ -16,15 +16,3 @@ public class HeldItem {
         self.item = item
     }
 }
-
-extension HeldItem {
-    func toDTO() -> HeldItemDTO {
-        return HeldItemDTO(item: item.toDTO())
-    }
-}
-
-extension Array where Element == HeldItem {
-    func toDTO() -> [HeldItemDTO] {
-        return self.map { $0.toDTO() }
-    }
-}

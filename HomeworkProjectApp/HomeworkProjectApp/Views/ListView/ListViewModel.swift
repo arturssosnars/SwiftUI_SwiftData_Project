@@ -32,7 +32,8 @@ class ListViewModel: ObservableObject {
         switch listType {
         case .pokemon:
             do {
-                let listedResponse = try await DataFetcher.shared.fetchPokemonList(limit: limit, offset: offset)
+                let listedResponse = try await DataFetcher.shared.fetchPokemonList(limit: limit,
+                                                                                   offset: offset)
                 hasNextPage = listedResponse.next != nil
                 if offset == 0 {
                     items = listedResponse.results.toEntity()
@@ -55,7 +56,10 @@ class ListViewModel: ObservableObject {
         let localItems = try? modelContext.fetch(FetchDescriptor<Pokemon>())
         var listedItems: [ListedItem] = []
         for item in localItems ?? [] {
-            listedItems.append(ListedItem(name: item.name, id: item.id))
+            listedItems.append(
+                ListedItem(name: item.name,
+                           id: item.id)
+            )
         }
         items = listedItems
     }
@@ -66,9 +70,7 @@ class ListViewModel: ObservableObject {
         case .pokemon:
             offset += limit
             await fetchData(offset: offset)
-        case .test:
-            break
-        case .test2:
+        default:
             break
         }
     }

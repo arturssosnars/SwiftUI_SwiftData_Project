@@ -19,17 +19,7 @@ public class ListedItem {
     }
 }
 
-extension ListedItem {
-    func toDTO() -> ListedItemDTO {
-        return ListedItemDTO(name: name, id: id)
-    }
-}
-
 extension Array where Element == ListedItem {
-    public func toDTO() -> [ListedItemDTO] {
-        return self.map { $0.toDTO() }
-    }
-    
     public func toList() -> [String] {
         return self.map { $0.name.capitalized }
     }
