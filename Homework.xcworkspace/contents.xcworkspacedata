@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:HomeworkDataModels">
+   </FileRef>
+   <FileRef
+      location = "group:HomeworkDataFetcher">
+   </FileRef>
+   <FileRef
+      location = "group:HomeworkProjectApp/HomeworkProjectApp.xcodeproj">
+   </FileRef>
+</Workspace>
